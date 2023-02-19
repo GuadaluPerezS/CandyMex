@@ -5,7 +5,7 @@
 	--yellow:#E0BA3D;
 	--coffe:#522e29;
 	--gray:#EDEEF2;
-	--red:#D1434F;;
+	--red:#D1434F;
 
 }
 
@@ -61,7 +61,16 @@ a {
 .producto-home{
     text-align: center;
     font: 2.3rem 'Playfair Display', serif;
+
 }
+
+.carrusel-text{
+    text-align: center;
+    font: 4rem 'Playfair Display', serif;
+    color: var(--red);
+}
+
+
 .font-fantasy{
 	font: small-caps bold 1.4rem Roboto Condensed, sans-serif;
 }
@@ -241,7 +250,12 @@ color: var(--gray);
 		margin-top: 20px;
 }
 
-
+.carruselCel{
+    display: none;
+}
+.carruselGrande{
+    display: block;
+}
 
 main {
     background-color: var(--yellow);
@@ -255,6 +269,16 @@ main {
     .contenedor-productos {
         grid-template-columns: 1fr;
     }
+    .menu-grande{
+    background-image: url(img/bg-cel.jpg);
+    height: 844px;
+}
+.carruselCel{
+    display: block;
+}
+.carruselGrande{
+    display: none;
+}
 }
 
 
@@ -371,7 +395,7 @@ main {
 
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(img/flecha.png);
+    background-image: url(img/flecha-a.png);
     transform: var(--bs-accordion-btn-icon-transform);
 }
 
@@ -407,7 +431,7 @@ main {
     height: var(--bs-accordion-btn-icon-width);
     margin-left: auto;
     content: "";
-    background-image: url(img/flecha.png);
+    background-image: url(img/flecha-a.png);
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
@@ -568,14 +592,14 @@ main {
     
     
     
-    transform: scale(2,2);
+    transform: scale(1.2,1.2);
 }
 
 .containerpepita-1:hover{
     
     
     
-    transform: scale(2,2);
+    transform: scale(1.2,1.2);
 }
 
 .font-coffe{
@@ -593,14 +617,14 @@ main {
 
 .aMargen{
     padding: 5rem;
-    transform: scale(2,2);
+    transform: scale(1.2,1.2);
        
 
 }
 
 .aMargen img:hover{
     width: 60px;
-    transform: scale(2,2);
+    transform: scale(1.2,1.2);
     background-image: url(img/sombra-redes.png);
 }
 

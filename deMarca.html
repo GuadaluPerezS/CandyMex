@@ -14,11 +14,11 @@
 
 
 <div class="container-fluid">
+<div class="row pink row-no-gutters justify-content-center mb-1">
 
-<div class="row pink row-no-gutters justify-content-center mb-1" >
-	<div class="col-sm-9" >
+  <div class="col-sm-9" >
 
-		
+    
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <a class="navbar-brand" href="index.html">
@@ -28,22 +28,37 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav nav-tabs mx-auto menu-principal">
-        <li class="nav-item align-self-center">
-          <a class="nav-link active" aria-current="page" href="caseros.html" style=""> Caseros </a>
+      <ul class="navbar-nav nav-tabs mx-auto menu-principal" >
+
+        <li class="nav-item align-self-center" id="txEs1">
+          <a class="nav-link" aria-current="page" href="caseros.html"> Caseros </a>
         </li>
-        <li class="nav-item align-self-center">
-          <a class="nav-link" href="#"> De marca </a>
+        <li class="nav-item align-self-center" id="txEs2">
+          <a class="nav-link active" href="deMarca.html"> De marca </a>
         </li>
+
+
+          <li class="nav-item align-self-center" id="txEn1">
+          <a class="nav-link" aria-current="page" href="caseros.html"> Homemade </a>
+        </li>
+        <li class="nav-item align-self-center" id="txEn2">
+          <a class="nav-link active" href="deMarca.html"> Branded </a>
+        </li>
+
+
       </ul>
+
+
 
       <ul class="navbar-nav nav-pills justify-content-end">
         <li class="nav-item align-self-center">
           <!-- Button trigger modal -->
-      <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-in">
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-in" id="txEs3">
       Entrar
       </a>
-
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-in" id="txEn3">
+      Welcome
+      </a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
          <div class="modal-dialog">
@@ -151,11 +166,12 @@
           </div>
         </div>
         </li>
-       <li class="nav-item align-self-center">
-          <img src="img/bandera-espana.jpg" href="#" class="idioma" width="40px" height="40px">
+       <li class="nav-item align-self-center ">
+          <img src="img/bandera-espana.jpg" onclick="btnEspañol()" id="btnEspañol" class="idioma" width="40px" height="40px">
+          <img src="img/bandera-uk.jpg" onclick="btnEnglish()" id="btnEnglish" class="idioma" width="40px" height="40px">
         </li>
 
-        <li class="nav-item align-self-center">
+        <li class="nav-item align-self-center p-4">
           <a href="carrito.html">
           <img src="img/cesto.png" width="40px" height="40px" href="#" style="cursor: pointer">
           <span class="position-absolute top-40 start-80 translate-middle badge rounded-pill bg-danger numerito" id="numerito">
@@ -173,16 +189,15 @@
 
 </nav>
   
-	
+  
 
-	</div>
+  </div>
   
 
 
-
-
-
 </div>
+
+
 
 
 
@@ -200,7 +215,7 @@
 
     <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Ingredientes</h5>
+        <h5 class="offcanvas-title" id="staticBackdropLabel">DULCES | CANDYS </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -239,49 +254,14 @@
 
 
 
-<div class="row row-no-gutters coffe justify-content-center my-2 py-3" style="text-align: center">
-    
-      
-    <div class="col-sm-3 my-1" >
-      
-      <a  href="#">
-      <img src="img/logo.png" alt="CandyMex" width="160 " >
-    </a>
-    
-      
-    </div>
-
-    <div class="col-sm-6 my-1" >
-      <div class="hstack gap-3" style="color: var(--gray)">
-  <div class="mx-auto"><a href="nosotros.html" class="font-foot">Nosotros</a>
-  </div>
-  <div class="vr "></div>
-  <div class="mx-auto"> <a href="eventos.html" class="font-foot">Eventos</a></div>
-  <div class="vr"></div>
-  <div class=" mx-auto"><a href="legales.html" class="font-foot">Política de Privacidad y cookies</a></div>
-</div>
-
-    <div class="col-sm-12 my-2" >
-      <div class="hstack gap-3">
-  <a class="mx-auto" href="#">
-      <img src="img/facebook.png" alt="CandyMex" width="60 " >
-    </a>
-    <a class="mx-auto" href="#">
-      <img src="img/twitter.png" alt="CandyMex" width="60 " >
-    </a>
-</div>
-    </div>
-
-    </div>
-
+<div id="myFooter">
+<div id="foot" class="row row-no-gutters coffe text-center my-2 py-3 justify-content-center">
   
-  </div>
 
 
+</div>
 
-
-
-
+</div>
 
 
 </div>
@@ -289,6 +269,9 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script src="js/footer.js"></script>
+<script src="js/lenguaje.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/deMarca.js"></script>
 

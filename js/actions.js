@@ -24,7 +24,7 @@ const productos = [
             nombre: "Picantes ▼",
             id: "picantes"
         },
-        precio: 1.80
+        precio: 1.81
     },
     // Sin Gluten
     {
@@ -41,7 +41,7 @@ const productos = [
     },
     {
         id: "suspiros",
-        titulo: "suspiros",
+        titulo: "Suspiros",
         origen: "./suspiro-es.html",
         imagen: "./img/productos/suspiros.jpg",
         cantidad:"40gr",
@@ -77,7 +77,7 @@ const productos = [
     },
     
     {
-        id: "Jamoncillo-calabaza",
+        id: "jamoncilloCalabaza",
         titulo: "3 Jamoncillos",
         origen: "./jamoncillo-pepita-es.html",
         imagen: "./img/productos/jamoncillo.jpg",
@@ -89,7 +89,7 @@ const productos = [
         precio: 3.23
     },
     {
-        id: "Limon-relleno",
+        id: "limonRelleno",
         titulo: "10 Limones rellenos",
         origen: "./limon-relleno-es.html",
         imagen: "./img/productos/limon-relleno.jpg",
@@ -101,7 +101,7 @@ const productos = [
         precio: 9.43
     },
        {
-        id: "jamoncillo-mostachon",
+        id: "jamoncilloMostachon",
         titulo: "Dulce de leche mostachón",
         origen: "./mostachon-es.html",
         imagen: "./img/productos/jamoncillo-mostachon.jpg",
@@ -162,7 +162,7 @@ const productos = [
         precio: 2.96
     },
     {
-       	id: "10-pepitorias",
+       	id: "pepitorias",
         titulo: "10 Pepitorias",
         origen: "./pepitoria-es.html",
         imagen: "./img/productos/pepitorias.jpg",

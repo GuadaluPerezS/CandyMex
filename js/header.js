@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Caseros</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+myHeader();
 
 
-
-
-
-<div class="container-fluid">
-
-
-<div class="row pink row-no-gutters justify-content-center mb-1">
-
-  <div class="col-sm-9" >
+function myHeader() {
+  document.getElementById("header").innerHTML = '';
+  header.innerHTML = `
+            
+            <div class="col-sm-9" >
 
     
 <nav class="navbar navbar-expand-lg">
@@ -33,7 +20,7 @@
       <ul class="navbar-nav nav-tabs mx-auto menu-principal" >
 
         <li class="nav-item align-self-center" id="txEs1">
-          <a class="nav-link active" aria-current="page" href="caseros.html"> Caseros </a>
+          <a class="nav-link" aria-current="page" href="caseros.html"> Caseros </a>
         </li>
         <li class="nav-item align-self-center" id="txEs2">
           <a class="nav-link" href="deMarca.html"> De marca </a>
@@ -41,7 +28,7 @@
 
 
           <li class="nav-item align-self-center" id="txEn1">
-          <a class="nav-link active" aria-current="page" href="caseros.html"> Homemade </a>
+          <a class="nav-link" aria-current="page" href="caseros.html"> Homemade </a>
         </li>
         <li class="nav-item align-self-center" id="txEn2">
           <a class="nav-link" href="deMarca.html"> Branded </a>
@@ -175,7 +162,7 @@
 
         <li class="nav-item align-self-center p-4">
           <a href="carrito.html">
-          <img src="img/cesto.png" width="40px" height="40px" href="#" style="cursor: pointer">
+          <img src="img/cesto.png" width="40px" height="40px" style="cursor: pointer">
           <span class="position-absolute top-40 start-80 translate-middle badge rounded-pill bg-danger numerito" id="numerito">
           0
           </span></a>
@@ -194,91 +181,5 @@
   
 
   </div>
-  
-
-
-</div>
-
-
-
-  <div class="row row-no-gutters justify-content-center py-3">
-      <div class="col-sm-9">
-        <a  class="select-item" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="justify-content: center">
-        <h2 class="titulo-principal" id="titulo-principal">Todos los productos ▼</h2>
-      
-      <hr style="color: var(--yellow); border-width: 8px">
-      <hr style="color: var(--red); border-width: 8px">
-      <hr style="color: var(--pink); border-width: 8px ">
-        </a>
-      </div>
-
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">DULCES | CANDYS </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="menu">
-
-          <li>
-            <button id="todos" class="boton-menu boton-categoria active">Todos los productos</button>
-          </li>
-          <li>
-             <button id="picantes" class="boton-menu boton-categoria">Picantes</button>
-          </li>
-          <li>
-            <button id="sinGluten" class="boton-menu boton-categoria">Libres de Gluten</button>
-          </li>
-          <li>
-            <button id="vegano" class="boton-menu boton-categoria">Veganos</button>
-          </li>
-          <li>
-            <button id="otros" class="boton-menu boton-categoria">Otros</button>
-          </li>
-    
-        </ul>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-<main class="row row-no-gutters yellow justify-content-center py-3 yellow">
-  
-
-            
-            <div id="contenedor-productos" class="contenedor-productos py-3 col-sm-9">
-               
-            </div>
-          
-</main>
-
-
-
-<div id="myFooter">
-<div id="foot" class="row row-no-gutters coffe text-center my-2 py-3 justify-content-center">
-  
-
-
-</div>
-
-</div>
-
-
-
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-<script src="js/footer.js"></script>
-<script src="js/lenguaje.js"></script>
-<script src="js/validation.js"></script>
-<script src="js/actions.js"></script>
-
-</body>
-</html>
+        `;
+}

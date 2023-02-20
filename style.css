@@ -90,6 +90,7 @@ color: var(--gray);
 
 .idioma{
 	border-radius: 100%;
+    cursor: pointer;
 }
 
 /* Formulario */
@@ -693,6 +694,10 @@ font-style: oblique;
 }
 .text-pink{
     color: var(--pink);
+}
+
+.text-gray{
+    color: var(--gray);
 }
 
 .carousel-control-next, .carousel-control-prev{

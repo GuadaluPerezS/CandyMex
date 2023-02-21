@@ -258,6 +258,12 @@ color: var(--gray);
     display: block;
 }
 
+.logoOpaco{
+    text-align: end;
+    margin-top: -6rem;
+    opacity: 0.5;
+}
+
 main {
     background-color: var(--yellow);
    
@@ -273,11 +279,15 @@ main {
     .menu-grande{
     background-image: url(img/bg-cel.jpg);
     height: 844px;
+
 }
 .carruselCel{
     display: block;
 }
 .carruselGrande{
+    display: none;
+}
+.logoOpaco{
     display: none;
 }
 }

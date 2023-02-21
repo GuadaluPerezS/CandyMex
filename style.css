@@ -257,7 +257,9 @@ color: var(--gray);
 .carruselGrande{
     display: block;
 }
-
+.carruselGrande2{
+    display: block;
+}
 .logoOpaco{
     text-align: end;
     margin-top: -6rem;
@@ -285,6 +287,9 @@ main {
     display: block;
 }
 .carruselGrande{
+    display: none;
+}
+.carruselGrande2{
     display: none;
 }
 .logoOpaco{
